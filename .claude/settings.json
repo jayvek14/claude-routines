@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m venv /tmp/ppcvenv)",
+      "Bash(/tmp/ppcvenv/bin/pip install -q google-ads)",
+      "Bash(/tmp/ppcvenv/bin/python ppc/daily_pull.py:*)",
+      "Bash(/tmp/ppcvenv/bin/python ppc/weekly_pull.py:*)",
+      "Bash(/tmp/ppcvenv/bin/python ppc/monthly_pull.py:*)",
+      "Bash(/tmp/ppcvenv/bin/python ppc/creative_pull.py:*)",
+      "Bash(/tmp/ppcvenv/bin/python ppc/tripwire.py:*)"
+    ]
+  }
+}
